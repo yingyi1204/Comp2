@@ -1,0 +1,312 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hi</title>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+  
+  <canvas id="myCanvas" width="500" height="350" style="border:1px solid">
+</canvas>
+
+<script>
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+
+ctx.beginPath();
+ctx.arc(156,95,70,0,2*Math.PI);
+ctx.fillStyle="brown";
+ctx.fill();
+//hair
+
+ctx.beginPath();
+ctx.scale(1.2, 1);
+ctx.arc(130,75,50,0,2*Math.PI);
+ctx.fillStyle="#FFE6CD";
+ctx.fill();
+//face
+
+ctx.beginPath();
+ctx.moveTo(85,60);
+ctx.bezierCurveTo(85,40,178,40,178,60);
+ctx.beginPath();
+ctx.moveTo(80,60);
+ctx.bezierCurveTo(80,10,180,10,180,60);
+ctx.fillStyle = "brown";
+ctx.fill();
+//hair
+
+ctx.beginPath();
+ctx.lineWidth=5;
+ctx.lineCap="round";
+ctx.strokeStyle="#996600";
+ctx.scale(1.2, 1);
+ctx.strokeRect(121, 50, 40, 35);
+ctx.stroke();
+//right frame
+
+ctx.strokeRect(55, 50, 40, 35);
+ctx.stroke();
+//left frame
+
+ctx.moveTo(95, 65);
+ctx.lineTo(121, 65);
+ctx.stroke();
+//frame connection
+
+ctx.beginPath();
+ctx.arc(85,70,5,0,2*Math.PI);
+ctx.fillStyle = "#6B4724";
+ctx.fill();
+//left eye
+
+ctx.beginPath();
+ctx.arc(131,70,5,0,2*Math.PI);
+ctx.fillStyle = "#6B4724";
+ctx.fill();
+//right eye
+
+ctx.beginPath();
+ctx.moveTo(70,68);
+ctx.bezierCurveTo(70,50,95,50,95,55);
+ctx.strokeStyle="6B4724"
+ctx.stroke();
+//left eye brown
+
+ctx.beginPath();
+ctx.moveTo(120,55);
+ctx.bezierCurveTo(120,50,145,50,145,68);
+ctx.strokeStyle="6B4724"
+ctx.stroke();
+//right eye brown
+
+ctx.beginPath();
+ctx.moveTo(95,100);
+ctx.bezierCurveTo(99,109,116,109,121,100);
+ctx.strokeStyle="#FF9966"
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(95,100);
+ctx.bezierCurveTo(95,119,121,119,121,100);
+ctx.strokeStyle="#FF9966"
+ctx.stroke();
+//mouth
+
+ctx.beginPath();
+ctx.lineJoin="round";
+ctx.moveTo(105,83);
+ctx.lineTo(108,87);
+ctx.lineTo(110,83);
+ctx.strokeStyle="#DB944D"
+ctx.stroke();
+//nose
+
+ctx.beginPath();
+ctx.fillStyle="#248FB2";
+ctx.fill();
+ctx.rotate(55*Math.PI/180);
+ctx.fillRect(190,-50,80,20);
+//right hand
+
+ctx.rotate(-55*Math.PI/180);
+ctx.rotate(-55*Math.PI/180);
+ctx.fillRect(-145,130,80,20);
+ctx.fill();
+//left hand
+
+ctx.rotate(55*Math.PI/180);
+
+ctx.beginPath();
+ctx.fill();
+ctx.fillStyle="#6685C2";
+ctx.fillRect(67,122,84,159);
+//body
+
+ctx.beginPath();
+ctx.arc(131,170,5,0,2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+ctx.beginPath();
+ctx.arc(131,210,5,0,2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+ctx.beginPath();
+ctx.arc(131,250,5,0,2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+ctx.beginPath();
+ctx.arc(91,170,5,0,2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+ctx.beginPath();
+ctx.arc(91,210,5,0,2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+ctx.beginPath();
+ctx.arc(91,250,5,0,2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+ctx.beginPath();
+ctx.arc(111,150,5,0,2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+ctx.beginPath();
+ctx.arc(111,190,5,0,2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();ctx.beginPath();
+ctx.arc(111,230,5,0,2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+ctx.beginPath();
+ctx.arc(111,270,5,0,2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+ctx.arc(73,150,5,0,2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+ctx.beginPath();
+ctx.arc(73,190,5,0,2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();ctx.beginPath();
+ctx.arc(73,230,5,0,2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+ctx.beginPath();
+ctx.arc(73,270,5,0,2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+ctx.arc(146,150,5,0,2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+ctx.beginPath();
+ctx.arc(146,190,5,0,2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();ctx.beginPath();
+ctx.arc(146,230,5,0,2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+ctx.beginPath();
+ctx.arc(146,270,5,0,2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+//dot
+
+ctx.beginPath();
+ctx.moveTo(75,124);
+ctx.bezierCurveTo(75,149,108,149,108,125);
+ctx.strokeStyle="white"
+ctx.stroke();
+ctx.fillStyle = "lightblue";
+ctx.fill();
+ctx.beginPath();
+ctx.moveTo(109,125);
+ctx.bezierCurveTo(109,149,145,149,145,124);
+ctx.strokeStyle="white"
+ctx.stroke();
+ctx.fillStyle = "lightblue";
+ctx.fill();
+//collar
+
+ctx.beginPath();
+ctx.fillStyle="#000066";
+ctx.fill();
+ctx.fillRect(80,270,20,50);
+ctx.fillRect(120,270,20,50);
+//legs
+
+ctx.beginPath();
+ctx.arc(130,325,20,0,1*Math.PI,true);
+ctx.arc(90,325,20,0,1*Math.PI,true);
+ctx.fillStyle="#FF4D94";
+ctx.fill();
+//foot
+
+ctx.beginPath();
+ctx.moveTo(250, 10);
+ctx.quadraticCurveTo(180, 10, 180, 72.5);
+ctx.quadraticCurveTo(190, 105, 205, 110);
+ctx.quadraticCurveTo(215, 130, 175, 115);
+ctx.quadraticCurveTo(220, 160, 220, 120);
+ctx.quadraticCurveTo(330, 160, 330, 72.5);
+ctx.quadraticCurveTo(330, 10, 250, 10);
+ctx.strokeStyle="orange";
+ctx.stroke();
+ctx.fillStyle="yellow";
+ctx.fill();
+//conversation
+
+ctx.beginPath();
+ctx.arc(230,225,20,0.61,1.1*Math.PI,true);
+ctx.arc(190,225,20,0,0.81*Math.PI,true);
+ctx.moveTo(172.5,235);
+ctx.lineTo(212,290);
+ctx.lineTo(247.5,235);
+ctx.strokeStyle="red";
+ctx.stroke();
+ctx.fillStyle="pink";
+ctx.fill();
+//heart
+
+ctx.beginPath();
+ctx.arc(41,202,3,0,1*Math.PI);
+ctx.strokeStyle="orange";
+ctx.stroke();
+ctx.fillStyle = "#FFE6CD";
+ctx.fill();
+ctx.beginPath();
+ctx.arc(34,206,3,0,1.0*Math.PI);
+ctx.strokeStyle="orange";
+ctx.stroke();
+ctx.fillStyle = "#FFE6CD";
+ctx.fill();
+ctx.beginPath();
+ctx.arc(28,204,3,0,1.0*Math.PI);
+ctx.strokeStyle="orange";
+ctx.stroke();
+ctx.fillStyle = "#FFE6CD";
+ctx.fill();
+ctx.arc(24,200,3,0,1.0*Math.PI);
+ctx.strokeStyle="orange";
+ctx.stroke();
+ctx.fillStyle = "#FFE6CD";
+ctx.fill();
+ctx.arc(20,196,3,0,2*Math.PI);
+ctx.strokeStyle="orange";
+ctx.stroke();
+ctx.fillStyle = "#FFE6CD";
+ctx.fill();
+//left hand
+
+ctx.beginPath();
+ctx.arc(196,194,3,0,2*Math.PI);
+ctx.strokeStyle="orange";
+ctx.stroke();
+ctx.fillStyle = "#FFE6CD";
+ctx.fill();
+ctx.beginPath();
+ctx.arc(196,200,3,0,1.0*Math.PI);
+ctx.strokeStyle="orange";
+ctx.stroke();
+ctx.fillStyle = "#FFE6CD";
+ctx.fill();
+ctx.beginPath();
+ctx.arc(190,202,3,0,1.0*Math.PI);
+ctx.strokeStyle="orange";
+ctx.stroke();
+ctx.fillStyle = "#FFE6CD";
+ctx.fill();
+ctx.arc(184,204,3,0,1.0*Math.PI);
+ctx.strokeStyle="orange";
+ctx.stroke();
+ctx.fillStyle = "#FFE6CD";
+ctx.fill();
+ctx.arc(178,206,3,0,1*Math.PI);
+ctx.strokeStyle="orange";
+ctx.stroke();
+ctx.fillStyle = "#FFE6CD";
+ctx.fill();
+//right hand
+
+</script> 
+  </body>
+</html>
